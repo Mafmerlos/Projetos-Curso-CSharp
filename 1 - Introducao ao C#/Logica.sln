@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Media", "Media\Media.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loteria", "Loteria\Loteria.csproj", "{04692CAE-9E23-49F3-8E4B-AB48F0CDBF1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabuada", "Tabuada\Tabuada.csproj", "{433285BE-59E5-4350-86FE-0DA03BF55EC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{04692CAE-9E23-49F3-8E4B-AB48F0CDBF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04692CAE-9E23-49F3-8E4B-AB48F0CDBF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04692CAE-9E23-49F3-8E4B-AB48F0CDBF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433285BE-59E5-4350-86FE-0DA03BF55EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433285BE-59E5-4350-86FE-0DA03BF55EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433285BE-59E5-4350-86FE-0DA03BF55EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433285BE-59E5-4350-86FE-0DA03BF55EC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
