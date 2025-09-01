@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabuada", "Tabuada\Tabuada.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorMoedas", "ConversorMoedas\ConversorMoedas.csproj", "{4740AFFA-5870-471C-8525-B140E912F701}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InserirNomesEmArrays", "InserirNomesEmArrays\InserirNomesEmArrays.csproj", "{0BA9D8EC-3B12-41E5-827E-AF675EA3D0F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4740AFFA-5870-471C-8525-B140E912F701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4740AFFA-5870-471C-8525-B140E912F701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4740AFFA-5870-471C-8525-B140E912F701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA9D8EC-3B12-41E5-827E-AF675EA3D0F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA9D8EC-3B12-41E5-827E-AF675EA3D0F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA9D8EC-3B12-41E5-827E-AF675EA3D0F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA9D8EC-3B12-41E5-827E-AF675EA3D0F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
