@@ -14,7 +14,7 @@ namespace Tabuada
             int numero = int.Parse(Console.ReadLine());
 
             Console.WriteLine($"A tabuada do {numero} é: ");
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i <= 10; i++)
             {
                 Console.WriteLine($" {numero} x {i} = {numero * i}");
             }

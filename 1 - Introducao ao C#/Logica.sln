@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loteria", "Loteria\Loteria.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabuada", "Tabuada\Tabuada.csproj", "{433285BE-59E5-4350-86FE-0DA03BF55EC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorMoedas", "ConversorMoedas\ConversorMoedas.csproj", "{4740AFFA-5870-471C-8525-B140E912F701}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{433285BE-59E5-4350-86FE-0DA03BF55EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{433285BE-59E5-4350-86FE-0DA03BF55EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{433285BE-59E5-4350-86FE-0DA03BF55EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4740AFFA-5870-471C-8525-B140E912F701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4740AFFA-5870-471C-8525-B140E912F701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4740AFFA-5870-471C-8525-B140E912F701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4740AFFA-5870-471C-8525-B140E912F701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
