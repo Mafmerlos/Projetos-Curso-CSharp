@@ -20,10 +20,17 @@ namespace CalculadoraSimples
             Console.WriteLine($"Soma: {n1 + n2}");
             Console.WriteLine($"Subtração: {n1 - n2}");
             Console.WriteLine($"Multiplicação: {n1 * n2}");
-            Console.WriteLine($"Divisão: { (double) n1 / n2}"); //cast
-            Console.WriteLine($"Resto: {n1%n2}");
 
-
+            if (n2 == 0) //Estrutura de decisão simples fluxo verdadeiro
+            {
+                Console.WriteLine($"Divisão: {(double)n1 / n2}");//cast
+                Console.WriteLine($"Resto: {n1 % n2}");
+            } else
+            {
+                Console.WriteLine("Impossível dividir por ZERO");
+            }
+                Console.WriteLine("Clique ENTER para encerrar");
+            Console.ReadLine();
 
         }
     }

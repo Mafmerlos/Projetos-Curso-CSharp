@@ -28,7 +28,20 @@ namespace Media
 
             double media = (n1 + n2 + n3) / 3;
             
-            Console.WriteLine($"Média: {media}");
+            Console.WriteLine($"Média: {media: 0.00}");
+
+            /*
+             * Maior que 7 está aprovado
+             * Menor ou igual a 7 é reprovado
+             */
+
+            if (media > 7)
+                Console.WriteLine("Aluno aprovado");
+            else 
+                Console.WriteLine("Aluno reprovado");
+
+
+
 
             Console.WriteLine("Aperte qualquer tecla para encerrar...");
             Console.ReadKey();

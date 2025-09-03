@@ -44,9 +44,9 @@ namespace Loteria
             double somaValorApostado = aposta1 + aposta2 + aposta3; 
 
             Console.WriteLine("Valores recebidos: ");
-            Console.WriteLine($"Amigo 1: {aposta1 / somaValorApostado * premio}");
-            Console.WriteLine($"Amigo 2: {aposta2 / somaValorApostado * premio}");
-            Console.WriteLine($"Amigo 3: {aposta3 / somaValorApostado * premio}");
+            Console.WriteLine($"Amigo 1: {aposta1 / somaValorApostado * premio : 0.00} ");
+            Console.WriteLine($"Amigo 2: {aposta2 / somaValorApostado * premio : 0.00} ");
+            Console.WriteLine($"Amigo 3: {aposta3 / somaValorApostado * premio : 0.00} ");
 
 
 
