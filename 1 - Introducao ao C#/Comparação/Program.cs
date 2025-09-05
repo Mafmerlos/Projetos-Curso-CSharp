@@ -21,8 +21,8 @@ namespace Comparação
             else if (n1 < n2) Console.WriteLine($"O numero {n2} é maior que o {n1}");
             else Console.WriteLine("Os numero digitados são iguais");
 
-
-
+            Console.WriteLine("Digite ENTER para encerrar...");
+            Console.ReadLine();
 
 
         }

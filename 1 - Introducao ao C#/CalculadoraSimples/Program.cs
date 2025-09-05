@@ -23,7 +23,7 @@ namespace CalculadoraSimples
 
             if (n2 == 0) //Estrutura de decisão simples fluxo verdadeiro
             {
-                Console.WriteLine($"Divisão: {(double)n1 / n2}");//cast
+                Console.WriteLine($"Divisão: {(double)n1 / n2}");  //cast
                 Console.WriteLine($"Resto: {n1 % n2}");
             } else
             {
