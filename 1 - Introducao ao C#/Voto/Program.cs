@@ -23,7 +23,7 @@ namespace Voto
     {
         static void Main(string[] args)
         {
-            //TODO realizar código feito em grupo na sala
+            //TODO realizar código 
         }
     }
 }

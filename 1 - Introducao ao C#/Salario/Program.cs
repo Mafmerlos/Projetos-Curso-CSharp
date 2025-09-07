@@ -32,6 +32,7 @@ namespace Salario
     {
         static void Main(string[] args)
         {
+            //TODO: realizar calculos 
         }
     }
 }
