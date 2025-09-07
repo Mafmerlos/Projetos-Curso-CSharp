@@ -32,7 +32,36 @@ namespace Salario
     {
         static void Main(string[] args)
         {
-            //TODO: realizar calculos 
+           
+            double salarioHora = 0.0, horasTrabalhadasMes = 0.0, salarioBrutoMes = 0.0,
+                descontoImpostoDeRenda = 0.0, descontoInss = 0.0, descontoSindicato = 0.0,
+                salarioliquido = 0.0;
+
+
+            Console.WriteLine("Digite quanto você ganha por hora: ");
+            salarioHora = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite quantas horas você trabalhou no mês: ");
+            horasTrabalhadasMes = double.Parse(Console.ReadLine());
+
+            salarioBrutoMes = salarioHora * horasTrabalhadasMes;
+            descontoImpostoDeRenda = salarioBrutoMes * 0.11;
+            descontoInss = salarioBrutoMes * 0.08;
+            descontoSindicato = salarioBrutoMes * 0.05;
+            salarioliquido = salarioBrutoMes - descontoImpostoDeRenda - descontoInss - descontoSindicato;
+
+
+
+
+
+            Console.WriteLine($"+ Salário bruto: R$ {salarioBrutoMes} ");
+            Console.WriteLine($"- IR (11%) : R$ {descontoImpostoDeRenda} ");
+            Console.WriteLine($"- INSS (8%) : R$ {descontoInss}");
+            Console.WriteLine($"- Sindicato (5%) : R$ {descontoSindicato}");
+            Console.WriteLine($"= Salário Líquido: R$ {salarioliquido}");
+
+
+
         }
     }
 }
