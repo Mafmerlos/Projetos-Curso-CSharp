@@ -23,7 +23,28 @@ namespace Voto
     {
         static void Main(string[] args)
         {
-            //TODO realizar código 
+            int voto = 0;
+
+            Console.WriteLine("Digite o numero que deseja votar (1-6):");
+            voto = int.Parse(Console.ReadLine());
+
+            switch (voto) {
+                case 1: 
+                case 2: 
+                case 3: 
+                case 4: 
+                    Console.WriteLine("Voto contabilizado com sucesso...");
+                    break;
+                case 5: Console.WriteLine("Voto nulo contabilizado...");
+                    break;
+                case 6: Console.WriteLine("Voto branco contabilizado...");
+                    break;
+                default: Console.WriteLine("Voto inválido...");
+                    break;
+            }
+
+            Console.WriteLine("Digite ENTER para encerrar o programa...");
+            Console.ReadLine();
         }
     }
 }
