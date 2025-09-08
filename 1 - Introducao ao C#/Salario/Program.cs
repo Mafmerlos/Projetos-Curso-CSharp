@@ -50,17 +50,14 @@ namespace Salario
             descontoSindicato = salarioBrutoMes * 0.05;
             salarioliquido = salarioBrutoMes - descontoImpostoDeRenda - descontoInss - descontoSindicato;
 
-
-
-
-
             Console.WriteLine($"+ Salário bruto: R$ {salarioBrutoMes} ");
             Console.WriteLine($"- IR (11%) : R$ {descontoImpostoDeRenda} ");
             Console.WriteLine($"- INSS (8%) : R$ {descontoInss}");
             Console.WriteLine($"- Sindicato (5%) : R$ {descontoSindicato}");
-            Console.WriteLine($"= Salário Líquido: R$ {salarioliquido}");
+            Console.WriteLine($"= Salário líquido: R$ {salarioliquido}");
 
-
+            Console.WriteLine("Digite ENTER para encerrar o programa");
+            Console.ReadLine();
 
         }
     }
