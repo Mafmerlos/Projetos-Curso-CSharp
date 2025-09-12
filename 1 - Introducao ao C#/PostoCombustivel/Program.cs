@@ -70,7 +70,7 @@ namespace PostoCombustivel
                         valorPagar = litrosVendidos * custoGasolina;
                         Console.WriteLine($"Valor a ser pago: {valorPagar:0.00}");
                     } break;
-                    default : Console.WriteLine("Digite um tipo de combustivel válido");
+                default: Console.WriteLine("Digite um tipo de combustivel válido");
                     break;
             }
             Console.WriteLine("Digite ENTER para encerrar o programa...");
@@ -78,44 +78,42 @@ namespace PostoCombustivel
 
         }
 
+        #endregion
 
-
-                    /*
-                    if(tipoCombustivel == 1)
-                    {
-                        if (litrosVendidos > NUMEROBASELITROS)
-                        {
-                        double descontoAlcoolMaiorQueNumeroBase = PRECOALCOOL * 0.05; //DESCONTO POR LITRO
-                           custoAlcool = PRECOALCOOL - descontoAlcoolMaiorQueNumeroBase;
-                            valorPagar = litrosVendidos * custoAlcool;
-                            Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
-                        } else
-                        {
-                        double descontoAlcoolMenorQueNumeroBase = PRECOALCOOL * 0.02; //DESCONTO POR LITRO
-                            custoAlcool = PRECOALCOOL - descontoAlcoolMenorQueNumeroBase;
-                            valorPagar = litrosVendidos * custoAlcool;
-                            Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
-                        }
-                    } else if (tipoCombustivel == 2)
-                    {
-                        if(litrosVendidos > NUMEROBASELITROS){
-                            double descontoGasolinaMaiorQueNumeroBasePorLitro = PRECOGASOLINA * 0.06; //DESCONTO POR LITRO
-                            custoGasolina = PRECOGASOLINA - descontoGasolinaMaiorQueNumeroBasePorLitro;
-                            valorPagar = litrosVendidos * custoGasolina;
-                            Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
-                        } else 
-                        {
-                            double descontoGasolinaMenorQueNumeroBase = PRECOGASOLINA * 0.03; //DESCONTO POR LITRO
-                            custoGasolina = PRECOGASOLINA - descontoGasolinaMenorQueNumeroBase;
-                            valorPagar = litrosVendidos * custoGasolina; 
-                            Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
-                        }
-                    } else
-                    {
-                        Console.WriteLine("Digite uma opção válida...");
-                    }
-                    */
-
+        /*
+        if(tipoCombustivel == 1)
+        {
+            if (litrosVendidos > NUMEROBASELITROS)
+            {
+            double descontoAlcoolMaiorQueNumeroBase = PRECOALCOOL * 0.05; //DESCONTO POR LITRO
+               custoAlcool = PRECOALCOOL - descontoAlcoolMaiorQueNumeroBase;
+                valorPagar = litrosVendidos * custoAlcool;
+                Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
+            } else
+            {
+            double descontoAlcoolMenorQueNumeroBase = PRECOALCOOL * 0.02; //DESCONTO POR LITRO
+                custoAlcool = PRECOALCOOL - descontoAlcoolMenorQueNumeroBase;
+                valorPagar = litrosVendidos * custoAlcool;
+                Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
             }
+        } else if (tipoCombustivel == 2)
+        {
+            if(litrosVendidos > NUMEROBASELITROS){
+                double descontoGasolinaMaiorQueNumeroBasePorLitro = PRECOGASOLINA * 0.06; //DESCONTO POR LITRO
+                custoGasolina = PRECOGASOLINA - descontoGasolinaMaiorQueNumeroBasePorLitro;
+                valorPagar = litrosVendidos * custoGasolina;
+                Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
+            } else 
+            {
+                double descontoGasolinaMenorQueNumeroBase = PRECOGASOLINA * 0.03; //DESCONTO POR LITRO
+                custoGasolina = PRECOGASOLINA - descontoGasolinaMenorQueNumeroBase;
+                valorPagar = litrosVendidos * custoGasolina; 
+                Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
+            }
+        } else
+        {
+            Console.WriteLine("Digite uma opção válida...");
+        }
+        */
     }
-
+}
