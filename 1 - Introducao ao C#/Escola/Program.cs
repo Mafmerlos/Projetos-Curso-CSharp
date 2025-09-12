@@ -63,7 +63,7 @@ namespace Escola
                     aprovados++;
                 }
 
-                Console.WriteLine("Deseja inserir aluno (s/n)\n");
+                Console.WriteLine("Deseja inserir aluno (s/n)");
                 entrada = Console.ReadLine().ToLower();
                 totalAlunos++;
 
@@ -75,11 +75,8 @@ namespace Escola
             Console.WriteLine($"Exame: {recuperacao}");
             Console.WriteLine($"Aprovados: {aprovados}");
 
-
-
-
-
-
+            Console.WriteLine("Digite qualquer tecla para encerrar");
+            Console.ReadKey();
 
         }
     }
