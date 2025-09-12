@@ -24,17 +24,19 @@ namespace PostoCombustivel
     internal class Program
     {
         const double PRECOALCOOL = 4.20, PRECOGASOLINA = 6.10, NUMEROBASELITROS = 20.0;
-
+        //TODO : Refatorar o if e else e a escrita desse código e realizar return early
         static void Main(string[] args)
         {
             int tipoCombustivel = 0;
             double litrosVendidos = 0.0, valorPagar = 0.0, custoAlcool = 0.0, custoGasolina = 0.0;
 
-            Console.WriteLine("Digite o tipo de combustível: \n1 - Alcool \n2 - Gasolina ");
+            Console.WriteLine("Digite o tipo de combustível: \n1 - Alcool \n2 - Gasolina "); //TODO : negativo
             tipoCombustivel = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite quantos litros vendidos: ");
             litrosVendidos = double.Parse(Console.ReadLine());
+
+            #region switch
 
             switch (tipoCombustivel)
             {
@@ -44,14 +46,14 @@ namespace PostoCombustivel
                         double descontoAlcoolMaiorQueNumeroBase = PRECOALCOOL * 0.05; //DESCONTO POR LITRO
                         custoAlcool = PRECOALCOOL - descontoAlcoolMaiorQueNumeroBase;
                         valorPagar = litrosVendidos * custoAlcool;
-                        Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
+                        Console.WriteLine($"Valor a ser pago: {valorPagar:0.00}");
                     }
                     else
                     {
                         double descontoAlcoolMenorQueNumeroBase = PRECOALCOOL * 0.02; //DESCONTO POR LITRO
                         custoAlcool = PRECOALCOOL - descontoAlcoolMenorQueNumeroBase;
                         valorPagar = litrosVendidos * custoAlcool;
-                        Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
+                        Console.WriteLine($"Valor a ser pago: {valorPagar:0.00}");
                     } break;
                 case 2:
                     if (litrosVendidos > NUMEROBASELITROS)
@@ -59,14 +61,14 @@ namespace PostoCombustivel
                         double descontoGasolinaMaiorQueNumeroBasePorLitro = PRECOGASOLINA * 0.06; //DESCONTO POR LITRO
                         custoGasolina = PRECOGASOLINA - descontoGasolinaMaiorQueNumeroBasePorLitro;
                         valorPagar = litrosVendidos * custoGasolina;
-                        Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
+                        Console.WriteLine($"Valor a ser pago: {valorPagar:0.00}");
                     }
                     else
                     {
                         double descontoGasolinaMenorQueNumeroBase = PRECOGASOLINA * 0.03; //DESCONTO POR LITRO
                         custoGasolina = PRECOGASOLINA - descontoGasolinaMenorQueNumeroBase;
                         valorPagar = litrosVendidos * custoGasolina;
-                        Console.WriteLine($"Valor a ser pago: {valorPagar:F2}");
+                        Console.WriteLine($"Valor a ser pago: {valorPagar:0.00}");
                     } break;
                     default : Console.WriteLine("Digite um tipo de combustivel válido");
                     break;
