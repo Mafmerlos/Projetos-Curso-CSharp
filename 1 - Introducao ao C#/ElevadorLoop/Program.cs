@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-//Fazer teste de mesa e realizar a tela do usuário
-
 namespace ElevadorLoop
 {
     internal class Program
@@ -31,16 +29,16 @@ namespace ElevadorLoop
             for (int i = 0; i < numeroDePessoas; i++)
             {
                 Console.Write($"Peso da {i + 1}ª pessoa em Kg:"); //não altera o valor de i.
-                double pesoDaPessoa = double.Parse(Console.ReadLine());
-                somaDosPesosDasPessoas += pesoDaPessoa;
+                double pesoDaPessoa = double.Parse(Console.ReadLine()); //valor do peso 
+                somaDosPesosDasPessoas += pesoDaPessoa; //somador para determinar o peso total no final 
             }
             if (somaDosPesosDasPessoas > pesoMaximoSuportadoPeloElevador)
-                Console.WriteLine("Elevador não pode entrar em funcionamento.");
+                Console.WriteLine("Elevador não pode entrar em funcionamento."); //caso negativo de sobrepeso retorna mensagem
             else
-                Console.WriteLine("Elevador funcionando...");
+                Console.WriteLine("Elevador funcionando..."); //enter para o usuário encerrar o programa
 
-            Console.WriteLine("\n--Pressione ENTER para encerrar--");
-            Console.ReadLine();
+            Console.WriteLine("\n--Pressione ENTER para encerrar--"); //enter para o usuário encerrar o programa
+            Console.ReadLine();  //leitura do enter do usuario para desligar o programa
 
         }
     }
