@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,27 +22,50 @@ namespace Voto
 {
     internal class Program
     {
+        const int CANDIDATO1 = 1, CANDIDATO2 = 2, CANDIDATO3 = 3, CANDIDATO4 = 4;
         static void Main(string[] args)
         {
-            int voto = 0;
+            int voto = 0, contadorVotosCandidatos = 0, contadorVotosNulos = 0, contadorVotosBrancos = 0, contadorVotosInvalidos = 0, totalDeVotos = 0;
+            string continuar = "s";
 
-            Console.WriteLine("Digite o numero que deseja votar (1-6):");
-            voto = int.Parse(Console.ReadLine());
+            while (continuar == "s")
+            {
+                Console.WriteLine("Digite o numero que deseja votar (1-6):");
+                voto = int.Parse(Console.ReadLine());
 
-            switch (voto) {
-                case 1: 
-                case 2: 
-                case 3: 
-                case 4: 
-                    Console.WriteLine("Voto contabilizado com sucesso...");
-                    break;
-                case 5: Console.WriteLine("Voto nulo contabilizado...");
-                    break;
-                case 6: Console.WriteLine("Voto branco contabilizado...");
-                    break;
-                default: Console.WriteLine("Voto inválido...");
-                    break;
+                switch (voto)
+                {
+                    case CANDIDATO1:
+                    case CANDIDATO2:
+                    case CANDIDATO3:
+                    case CANDIDATO4:
+                        Console.WriteLine("Voto contabilizado com sucesso...");
+                        contadorVotosCandidatos++;
+                        break;
+                    case 5:
+                        Console.WriteLine("Voto nulo contabilizado...");
+                        contadorVotosNulos++;
+                        break;
+                    case 6:
+                        Console.WriteLine("Voto branco contabilizado...");
+                        contadorVotosBrancos++;
+                        break;
+                    default:
+                        Console.WriteLine("Voto inválido...");
+                        contadorVotosInvalidos++;
+                        break;
+                }
+                Console.WriteLine("Deseja continuar votando? s - (sim) / n - (não)");
+                continuar = Console.ReadLine();
+                Console.Clear();
             }
+            totalDeVotos =  contadorVotosCandidatos + contadorVotosNulos + contadorVotosBrancos + contadorVotosInvalidos;
+            Console.WriteLine("Votos");
+            Console.WriteLine($"Quantidade de votos válidos: {contadorVotosCandidatos} ");
+            Console.WriteLine($"Quantidade de votos nulos: {contadorVotosNulos} ");
+            Console.WriteLine($"Quantidade de votos brancos: {contadorVotosBrancos} ");
+            Console.WriteLine($"Quantidade de votos inválidos: {contadorVotosInvalidos} ");
+            Console.WriteLine($"Total de votos: {totalDeVotos} ");
 
             Console.WriteLine("Digite ENTER para encerrar o programa...");
             Console.ReadLine();
