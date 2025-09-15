@@ -24,19 +24,27 @@ namespace PostoCombustivel
     internal class Program
     {
         const double PRECOALCOOL = 4.20, PRECOGASOLINA = 6.10, NUMEROBASELITROS = 20.0;
-        //TODO : Refatorar o if e else e a escrita desse código e realizar return early
+        //TODO : Implementar Laço para usuário e Refatorar o código para deixar profissional e aprender métodos usados no mercado
         static void Main(string[] args)
         {
             int tipoCombustivel = 0;
             double litrosVendidos = 0.0, valorPagar = 0.0, custoAlcool = 0.0, custoGasolina = 0.0;
 
-            Console.WriteLine("Digite o tipo de combustível: \n1 - Alcool \n2 - Gasolina "); //TODO : negativo
+            Console.WriteLine("Digite o tipo de combustível: \n1 - Alcool \n2 - Gasolina "); 
             tipoCombustivel = int.Parse(Console.ReadLine());
+            if (tipoCombustivel != 1 && tipoCombustivel != 2)
+            {
+                Console.WriteLine("Digite uma opçao válida");
+                return;
+            }
 
             Console.WriteLine("Digite quantos litros vendidos: ");
             litrosVendidos = double.Parse(Console.ReadLine());
-
-            #region switch
+            if(litrosVendidos <= 0)
+            {
+                Console.WriteLine("Digite um valor válido para quantidade de litros vendidos");
+                return;
+            }
 
             switch (tipoCombustivel)
             {
@@ -78,7 +86,7 @@ namespace PostoCombustivel
 
         }
 
-        #endregion
+     
 
         /*
         if(tipoCombustivel == 1)
