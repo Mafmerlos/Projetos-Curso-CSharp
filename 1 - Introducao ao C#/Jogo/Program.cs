@@ -32,7 +32,7 @@ namespace Jogo
         {
             string entradaUsuario = "",saidaUsuario = "s", golpe = "";
             int socos = 0, chutes = 0, magias = 0, totalPontosFinal = 0, quantidadePontosSoco = 0,
-                quantidadePontosChute = 0, quantidadePontosMagia = 0;
+            quantidadePontosChute = 0, quantidadePontosMagia = 0;
 
             Console.WriteLine("Deseja jogar? (s - sim / n - não)");
             entradaUsuario = Console.ReadLine().ToLower();
@@ -44,6 +44,7 @@ namespace Jogo
             {
                 Console.WriteLine(" Deseja executar um golpe (s-soco c-chute m-magia x-sair)?");
                 golpe = Console.ReadLine().ToLower();
+                Console.Clear();
 
                 switch (golpe)
                 {
