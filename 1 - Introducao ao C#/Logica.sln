@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevadorLoop", "ElevadorLoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escola", "Escola\Escola.csproj", "{8C9FF17D-0253-4286-A63E-0003359BE26C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParesImpares", "ParesImpares\ParesImpares.csproj", "{10BA1691-3A93-4411-BAB6-F48410FE4B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrePos", "PrePos\PrePos.csproj", "{2997D0CE-5710-4B1A-BC64-7D31F43B605C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{8C9FF17D-0253-4286-A63E-0003359BE26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C9FF17D-0253-4286-A63E-0003359BE26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C9FF17D-0253-4286-A63E-0003359BE26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BA1691-3A93-4411-BAB6-F48410FE4B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BA1691-3A93-4411-BAB6-F48410FE4B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BA1691-3A93-4411-BAB6-F48410FE4B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BA1691-3A93-4411-BAB6-F48410FE4B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2997D0CE-5710-4B1A-BC64-7D31F43B605C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2997D0CE-5710-4B1A-BC64-7D31F43B605C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2997D0CE-5710-4B1A-BC64-7D31F43B605C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2997D0CE-5710-4B1A-BC64-7D31F43B605C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
