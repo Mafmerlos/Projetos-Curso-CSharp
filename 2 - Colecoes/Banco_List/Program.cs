@@ -13,6 +13,15 @@ using System.Threading.Tasks;
 * 4 - Encerrar o programa (se a fila estiver vazia)
 */
 
+/*
+ * Tarefas 18/09 
+ * 1 - Continuar o teste de mesa do array - ParImpar
+ * 2 - Fazer o teste de mesa da Lista - ParImpar
+ * 3 - Fazer o teste de mesa do banco
+ * 4 - Estudar Queue<T> e Stack<T>
+ * 5 - Alterar Banco_List para Banco_Queue utilizando o Queue<T> - Criar um novo projeto Banco_Queue 
+ */
+
 namespace Banco_List
 {
     internal class Program
@@ -36,15 +45,19 @@ namespace Banco_List
                 {
                     case 1:
                         fila.Add(++senha);
-                        Console.WriteLine($"Senha: {senha}");
-                        Console.WriteLine($"Tamanho da lista: {fila.Count}");
+                        Console.WriteLine($"Senha: {senha}");   
                         break;
 
                     case 2:
-                        Console.WriteLine($"Senha chamada: {senha} ");
-                        fila.Remove(senha);
-                    
-                        break;
+                        if(fila.Count > 0) { 
+                        Console.WriteLine($"Senha chamada: {fila[0]} ");
+                        fila.RemoveAt(0);
+                        }
+                        else
+                        {
+                            Console.WriteLine("A fila está vazia");
+                        }
+                            break;
 
                     case 3:
                         if (fila.Count > 0)
@@ -52,7 +65,7 @@ namespace Banco_List
 
                             for (int i = 0; i < fila.Count; i++)
                             {
-                                Console.WriteLine($"Senha {i}: {fila[i]}");
+                                Console.WriteLine($"Senha {i+1}: {fila[i]}");
                             }
                         }
                         else
@@ -61,10 +74,22 @@ namespace Banco_List
                         }
                         break;
                     case 4:
+                        if(fila.Count > 0)
+                        {
+                            Console.Write("Não foi possivel encerrar o programa." +
+                                " Chame todos antes de encerrar!\n");  
+                            continue;
+                            
 
-                        break;
+                        } else
+                        {
+                            Console.WriteLine("Encerrando programa...");
+                            return;
+                        }
+
+           
                     default:
-                        Console.WriteLine("Encerrado");
+                        Console.WriteLine("Digite uma opção válida");
                         break;
                 }
 
