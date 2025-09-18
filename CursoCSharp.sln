@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabuada", "1 - Introducao a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voto", "1 - Introducao ao C#\Voto\Voto.csproj", "{462C1387-9AAF-40D6-BCDC-37B4947432BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParImpar", "2 - Colecoes\ParImpar\ParImpar.csproj", "{B8AAE6AB-1AE1-4018-B789-66E78E82B5AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{462C1387-9AAF-40D6-BCDC-37B4947432BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{462C1387-9AAF-40D6-BCDC-37B4947432BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{462C1387-9AAF-40D6-BCDC-37B4947432BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8AAE6AB-1AE1-4018-B789-66E78E82B5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8AAE6AB-1AE1-4018-B789-66E78E82B5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8AAE6AB-1AE1-4018-B789-66E78E82B5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8AAE6AB-1AE1-4018-B789-66E78E82B5AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
