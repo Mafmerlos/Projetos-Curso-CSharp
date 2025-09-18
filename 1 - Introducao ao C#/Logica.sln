@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiasDaSemana", "DiasDaSeman
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LacoRepeticao", "LacoRepeticao\LacoRepeticao.csproj", "{D5C062F3-8205-4D67-B984-77AE187824BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParImparNovo", "ParImparNovo\ParImparNovo.csproj", "{C6B2FF15-B2EE-43A7-8F42-944E9B6B698A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{D5C062F3-8205-4D67-B984-77AE187824BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5C062F3-8205-4D67-B984-77AE187824BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5C062F3-8205-4D67-B984-77AE187824BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B2FF15-B2EE-43A7-8F42-944E9B6B698A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B2FF15-B2EE-43A7-8F42-944E9B6B698A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B2FF15-B2EE-43A7-8F42-944E9B6B698A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B2FF15-B2EE-43A7-8F42-944E9B6B698A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
