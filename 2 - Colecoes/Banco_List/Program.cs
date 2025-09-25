@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 */
 
 /*
- * Tarefas 18/09 
+ * Tarefas 
  * 1 - Continuar o teste de mesa do array - ParImpar
  * 2 - Fazer o teste de mesa da Lista - ParImpar
  * 3 - Fazer o teste de mesa do banco
@@ -55,7 +55,7 @@ namespace Banco_List
                         }
                         else
                         {
-                            Console.WriteLine("A fila está vazia");
+                            Console.WriteLine("A fila está vazia. Encerre ou pegue uma senha!\n");
                         }
                             break;
 
@@ -99,12 +99,6 @@ namespace Banco_List
                 Console.Clear();
 
             }
-            //fila.Add(1);
-
-            //fila.Remove(1);
-            //fila.RemoveAt(0);
-
-
         }
     }
 }
