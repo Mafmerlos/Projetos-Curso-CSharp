@@ -4,12 +4,12 @@ namespace Loja.Models
 {
     internal class Porta
     {
-        public bool Aberta {  get; set; }
-        public string Cor {  get; set; }
+        public bool Aberta {  get; private set; }
+        public string Cor {  get; private set; }
         
         public Porta()
         {
-            this.Aberta = false;
+            Aberta = false;
             Cor = "branca";
         }
 

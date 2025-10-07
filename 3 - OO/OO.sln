@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentos", "Fundamentos\Fundamentos.csproj", "{736ACBE1-B0FA-48E0-B978-2F7D4F838EA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja", "Loja\Loja.csproj", "{AFE4AB9C-13BC-484F-A954-698371B802A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pais", "Pais\Pais.csproj", "{6032AA16-9638-49B7-8DBB-55D70C07D5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assistencia", "Assistencia\Assistencia.csproj", "{B1390329-1AA7-425F-8C35-19B1CFEE82E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6032AA16-9638-49B7-8DBB-55D70C07D5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6032AA16-9638-49B7-8DBB-55D70C07D5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6032AA16-9638-49B7-8DBB-55D70C07D5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1390329-1AA7-425F-8C35-19B1CFEE82E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1390329-1AA7-425F-8C35-19B1CFEE82E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1390329-1AA7-425F-8C35-19B1CFEE82E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1390329-1AA7-425F-8C35-19B1CFEE82E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
