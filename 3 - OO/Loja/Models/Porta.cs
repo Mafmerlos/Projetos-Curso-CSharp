@@ -4,27 +4,35 @@ namespace Loja.Models
 {
     internal class Porta
     {
-        private bool aberta;
-        private string cor;
+        public bool Aberta {  get; set; }
+        public string Cor {  get; set; }
+        
         public Porta()
         {
-            aberta = false;
-            cor = "branca";
+            this.Aberta = false;
+            Cor = "branca";
+        }
+
+        public Porta(bool aberta,string cor)
+        {
+            this.Aberta = aberta; //this quando não colocado funciona por debaixo dos panos
+            Cor = cor;
+
         }
 
         public void Abrir()
         {
-            aberta = true;
+            Aberta = true;
         }
 
         public void Fechar()
         {
-            aberta = false;
+            Aberta = false;
         }
 
         public void Pintar(string cor)
         {
-            this.cor = cor;
+            this.Cor = cor;
         }
     }
 }
