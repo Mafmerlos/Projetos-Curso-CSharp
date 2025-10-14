@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Especie", "Especie\Especie.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce", "ECommerce\ECommerce.csproj", "{60E55DF9-D46B-4322-A517-E4288CFCE929}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollerCoaster", "..\..\..\..\OO (4)\OO\RollerCoaster\RollerCoaster.csproj", "{7160E5C0-95B7-4C8D-9953-18F21DA27006}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{60E55DF9-D46B-4322-A517-E4288CFCE929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E55DF9-D46B-4322-A517-E4288CFCE929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60E55DF9-D46B-4322-A517-E4288CFCE929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7160E5C0-95B7-4C8D-9953-18F21DA27006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7160E5C0-95B7-4C8D-9953-18F21DA27006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7160E5C0-95B7-4C8D-9953-18F21DA27006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7160E5C0-95B7-4C8D-9953-18F21DA27006}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
