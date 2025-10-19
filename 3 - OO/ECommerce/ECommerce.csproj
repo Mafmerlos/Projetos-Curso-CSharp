@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60E55DF9-D46B-4322-A517-E4288CFCE929}</ProjectGuid>
+    <ProjectGuid>{A6116B67-E02D-414B-8E44-EF596DFC3E27}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ECommerce</RootNamespace>
-    <AssemblyName>ECommerce</AssemblyName>
+    <RootNamespace>Ecommerce</RootNamespace>
+    <AssemblyName>Ecommerce</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,12 +45,14 @@
   <ItemGroup>
     <Compile Include="Models\Carrinho.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\ItemCarrinho.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Models\Ecommerce.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

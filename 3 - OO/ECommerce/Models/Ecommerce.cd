@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ecommerce.Models.Produto">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAkAAAAAAAAAAAAAAAAIAAEAAEAQAA=</HashCode>
+      <FileName>Models\Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Models.Cliente">
+    <Position X="9" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Models.Carrinho">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAAAIAEAACAAAAAAAAAAAQAAAAAAAABAAA=</HashCode>
+      <FileName>Models\Carrinho.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

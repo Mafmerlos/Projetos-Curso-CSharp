@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B12F85E0-8A9C-4121-9B77-26529455BDB5}</ProjectGuid>
+    <ProjectGuid>{7160E5C0-95B7-4C8D-9953-18F21DA27006}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>RollerCoaster</RootNamespace>
     <AssemblyName>RollerCoaster</AssemblyName>
@@ -43,11 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auditor.cs" />
+    <Compile Include="Bilheteria.cs" />
+    <Compile Include="Brinquedo.cs" />
+    <Compile Include="BrinquedoEletrico.cs" />
+    <Compile Include="BrinquedoNaoEletrico.cs" />
+    <Compile Include="Carrossel.cs" />
+    <Compile Include="Funcionario.cs" />
+    <Compile Include="Gerente.cs" />
+    <Compile Include="IAcessoParque.cs" />
+    <Compile Include="IBrinquedoAssustador.cs" />
+    <Compile Include="IBrinquedoRadical.cs" />
+    <Compile Include="IParque.cs" />
+    <Compile Include="MontanhaRussa.cs" />
+    <Compile Include="Minhocao.cs" />
+    <Compile Include="MontanhaRussaTunada.cs" />
+    <Compile Include="Parque.cs" />
+    <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PulaPula.cs" />
+    <Compile Include="TiroAlvo.cs" />
+    <Compile Include="TremFantasma.cs" />
+    <Compile Include="TrombaTromba.cs" />
+    <Compile Include="Visitante.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DiagramaClasses.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
