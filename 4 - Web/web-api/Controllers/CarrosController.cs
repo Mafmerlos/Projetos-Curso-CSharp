@@ -10,15 +10,17 @@ using web_api.Models;
 namespace web_api.Controllers
 {
     //API Carro versão 1 = 2025-10-23 11:33
+    //API Carro versão 2 = 2025-10-28 10:22
+
     public class CarrosController : ApiController
     {
         private static List<Carro> listaCarro = new List<Models.Carro>();
         private  static int contador = 0;
 
         // GET: api/Carros
-        public List<Models.Carro> Get()
+        public IHttpActionResult Get()
         {
-            return listaCarro;
+            return Ok(listaCarro);
 
             //List<Carro> listaCarro = new List<Models.Carro>();
             //Carro c1 = new Carro();
@@ -49,56 +51,59 @@ namespace web_api.Controllers
         }
 
         // GET: api/Carros/5
-        public Models.Carro Get(int id)
+        public IHttpActionResult Get(int id)
         {
             foreach(var carro in listaCarro)
             {
                 if(carro.Id == id)
                 {
-                    return carro;
+                    return Ok(carro);
                 }
                 
             }
-            return null;
+            return NotFound();
         }
 
         // POST: api/Carros
-        public void Post([FromBody] Models.Carro value)
+        public IHttpActionResult Post([FromBody] Models.Carro value)
         {
             value.Id = ++contador;
             listaCarro.Add(value);
+            return Ok(value);
                 
         }
 
         // PUT: api/Carros/5
-        public void Put(int id, [FromBody]Models.Carro value)
+        public IHttpActionResult Put(int id, [FromBody]Models.Carro value)
         {
+            if(id != value.Id) { return BadRequest("Id do corpo da requisição diferente do id do endpoint"); }
+
             foreach (Models.Carro carro in listaCarro)
             {
                 if (carro.Id == id)
                 {
                     carro.Nome = value.Nome;
                     carro.Valor = value.Valor;
-                    break;
+                    return Ok(carro);
                 }
 
             }
-
+            return NotFound();
 
         }
 
         // DELETE: api/Carros/5
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
             foreach(Models.Carro carro in listaCarro)
             {
                 if(carro.Id == id)
                 {
                     listaCarro.Remove(carro);
-                    break;
+                    return Ok(carro);
                 }
             }
-           
+            return NotFound();
         }
     }
 }
