@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.UI;
 
 namespace web_api.Controllers
 {
@@ -14,57 +15,126 @@ namespace web_api.Controllers
         private static int contador = 0;
 
         // GET: api/Produtos
-        public List<Models.Produto> Get()
-        {         
-            return produtos;
+        public IHttpActionResult Get()
+        {
+            try
+            {
+                return Ok(produtos);
+            }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
         }
 
         // GET: api/Produtos/5
-        public Models.Produto Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            foreach (var produto in produtos)
-            {
-                if (produto.Id == id)
+
+            try
+            {         
+                var produto = produtos.FirstOrDefault(item => item.Id == id);
+
+                if (produto == null)
                 {
-                    return produto;                                        
+                    return NotFound();
                 }
-                
+                return Ok(produto);
             }
-            return null;
+            catch (Exception e) 
+            { 
+                return InternalServerError(e);
+            }
+
+            //foreach (var produto in produtos)
+            //{
+            //    if (produto.Id == id)
+            //    {
+            //        return produto;                                        
+            //    }
+                
+            //}
+            //return null;
         }
 
         // POST: api/Produtos
-        public void Post([FromBody]Models.Produto produto)
+        public IHttpActionResult Post([FromBody]Models.Produto produto)
         {
-            produto.Id = ++contador;
-            
-            produtos.Add(produto);
+            try
+            {
+                produto.Id = ++contador;
+                produtos.Add(produto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
         }
 
         // PUT: api/Produtos/5
-        public void Put(int id, [FromBody]Models.Produto value)
+        public IHttpActionResult Put(int id, [FromBody]Models.Produto value)
         {
-            foreach(var produto in produtos)
+            if(id != value.Id)
             {
-                if (produto.Id == id)
-                {
-                    produto.Nome = value.Nome;
-                    break;
-                }
+                return BadRequest("O id do endpoint é diferente da requisição");
             }
+
+            try
+            {
+                var produto = produtos.FirstOrDefault(item => item.Id == id);
+                if (produto == null)
+                {
+                    return NotFound();
+                }
+                produto.Nome = value.Nome;
+                return Ok(produto);
+
+            }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
+            
+
+
+
+            //foreach(var produto in produtos)
+            //{
+            //    if (produto.Id == id)
+            //    {
+            //        produto.Nome = value.Nome;
+            //        break;
+            //    }
+            //}
         }
 
         // DELETE: api/Produtos/5
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
-            foreach (var produto in produtos)
+            try
             {
-                if (produto.Id == id)
+                var produto = produtos.FirstOrDefault(item => item.Id == id);
+                if (produto == null)
                 {
-                    produtos.Remove(produto);
-                    break;
+                    return NotFound();
                 }
+                produtos.Remove(produto);
+                return Ok(produto);
             }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
+
+            //foreach (var produto in produtos)
+            //{
+            //    if (produto.Id == id)
+            //    {
+            //        produtos.Remove(produto);
+            //        break;
+            //    }
+            //}
 
         }
     }
